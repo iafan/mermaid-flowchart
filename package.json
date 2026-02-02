@@ -1,0 +1,38 @@
+{
+  "name": "mermaid-flowchart",
+  "version": "0.0.1",
+  "description": "Parse Mermaid flowchart syntax and render as SVG with CSS variable theming",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "mermaid",
+    "flowchart",
+    "svg",
+    "diagram",
+    "parser"
+  ],
+  "author": "",
+  "license": "Unlicense",
+  "devDependencies": {
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.3"
+  }
+}
